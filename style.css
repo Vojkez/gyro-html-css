@@ -323,3 +323,15 @@ footer {
     color: #333;
     margin-bottom: 10px;
 }
+@keyframes glow{
+    from{
+        box-shadow: 0 0 10px 5px #f1c27d;
+    }
+    to{
+        box-shadow: 0 0 20px 10px #005477;
+    }
+}
+.menu-item:hover{
+    animation: glow 2s infinite alternate;
+    transform: scale(1.05);
+}
